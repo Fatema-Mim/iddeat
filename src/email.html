@@ -8,25 +8,34 @@
     <title>Document</title>
 </head>
 <body dir="ltr">
-    <div class="px-96">
-        <div class="p-6 m-4 bg-white rounded-lg shadow-md">
-            <div class="mt-6">
-                <h1 class="text-3xl font-bold text-color3">
-                    Welcome!
-                </h1>
-                <p class="text-gray-600">Sign up or log in to countinue</p>
-            </div>
-            <div>
-                <div class="py-4">
-                    <h4 class="py-2">Delivery time:</h4>
-                    <div class="flex justify-between">
-                        <input type="time" class="border border-gray-300 p-3 w-full">
-                        <input type="text" class="border border-gray-300 p-3 w-full">
+<div class="lg:px-96 md:px-28 lg:py-20 md:py-40 py-10">
+    <div class="p-6 m-4 bg-white rounded-lg shadow-md">
+        <div>
+            <img src="assets/img/email.png" alt="email" class="w-28 h-28" />
+        </div>
+        <div class="mt-6">
+            <h1 class="text-3xl font-bold text-color3">
+                What's your email ?
+            </h1>
+            <p class="text-gray-600">We'll check if you have an account</p>
+        </div>
+        <div>
+            <div class="py-4">
+                <div>
+                    <div>
+                        <label for="email" class="text-sm text-color3 py-2">Email </label>
+                        <input type="email" id="email" placeholder="xyz@gamil.com"
+                            class="border border-gray-300 p-3 w-full">
+                    </div>
+
+                    <div class="pt-4">
+                        <button class="w-full bg-color1 p-3 text-white uppercase font-bold  ">Continue</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     
 </body>
 </html>
