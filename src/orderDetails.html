@@ -8,70 +8,96 @@
     <title>Document</title>
 </head>
 <body dir="ltr">
-    <div class="grid grid-cols-2  px-36 py-10">
+    <div class="grid grid-cols-2  px-40 py-10">
         <!-- left side -->
-        <div class="p-6 m-4 bg-white rounded-lg shadow-lg">
+        <div class="p-6 m-4 bg-white shadow-lg">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, repudiandae. At quod aliquam quis similique illum laborum eaque sint aut.
         </div>
         <!-- right side -->
-        <div class="p-6 m-4 bg-white rounded-lg shadow-lg">
-            <div>
-                <p>Order Details</p>
+        <div class="p-5 bg-white shadow-lg">
+            <div class="text-center">
+                <p class="text-2xl font-bold text-color3">Order Details</p>
             </div>
-            <div>
+            <div class="p-5">
                 <div>
-                    <p>Your Order from</p>
-                    <p>shop name</p>
+                    <div class="flex justify-between">
+                        <p class="text-color5">Your Order from</p>
+                        <p class="text-color3  font-medium">shop name</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-color5">Order number</p>
+                        <p class="text-color3  font-medium">#1111111</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-color5">Delivery Address</p>
+                        <p class="text-color3  font-medium">mirpur 10</p>
+                    </div>
+                </div>
+                <div class="py-5" >
+                    <div class="flex justify-between">
+                        <!-- quantity -->
+                        <p class="font-bold text-color1">1 X</p>
+                        <!-- food name -->
+                        <p class="text-color5">Amarican Burger</p>
+                        <!-- price -->
+                        <p class="text-color5">BDT 200</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <!-- quantity -->
+                        <p class="font-bold text-color1">2 X</p>
+                        <!-- food name -->
+                        <p class="text-color5">Beef Burger</p>
+                        <!-- price -->
+                        <p class="text-color5">BDT 400</p>
+                    </div>
                 </div>
                 <div>
-                    <p>Order number</p>
-                    <p>#1111111</p>
+                    <div class="flex justify-between text-color5">
+                        <p>Subtotal</p>
+                        <p>BDT 200</p>
+                    </div>
+                    <div class="flex justify-between text-color5">
+                        <p>Delivery fee</p>
+                        <p>BDT 28</p>
+                    </div>
+                    <div class="flex justify-between text-color5">
+                        <p>Discount</p>
+                        <p> -BDT 20</p>
+                    </div>
+                    <div class="flex justify-between text-color5">
+                        <p>Incl.Tax</p>
+                        <p>BDT 8</p>
+                    </div>
+                    <div class="flex justify-between text-color3 font-semibold pt-3">
+                        <p>Total <span>(Incl.VAT)</span> </p>
+                        <p>BDT 200</p>
+                    </div>
+                </div>
+                <div class="py-5">
+                    <p class="text-color3 font-bold text-lg">Paid With</p>
+                    <div class="flex justify-between text-color5">
+                        <svg class="inline-block w-10 h-10" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <title />
+                            <g id="Cash">
+                                <path
+                                    d="M476,88H36a7.9979,7.9979,0,0,0-8,8V336a7.9979,7.9979,0,0,0,8,8H476a7.9979,7.9979,0,0,0,8-8V96A7.9979,7.9979,0,0,0,476,88Zm-8,240H44V104H468Z" />
+                                <path
+                                    d="M76,272a24.0262,24.0262,0,0,1,24,24,7.9979,7.9979,0,0,0,8,8h76a8,8,0,0,0,0-16H115.1953A40.119,40.119,0,0,0,84,256.8047V175.1953A40.119,40.119,0,0,0,115.1953,144H184a8,8,0,0,0,0-16H108a7.9979,7.9979,0,0,0-8,8,24.0262,24.0262,0,0,1-24,24,7.9979,7.9979,0,0,0-8,8v96A7.9979,7.9979,0,0,0,76,272Z" />
+                                <path
+                                    d="M328.0039,144h68.8008A40.119,40.119,0,0,0,428,175.1953v81.6094A40.119,40.119,0,0,0,396.8047,288H328.0039a8,8,0,1,0,0,16H404a7.9979,7.9979,0,0,0,8-8,24.0262,24.0262,0,0,1,24-24,7.9979,7.9979,0,0,0,8-8V168a7.9979,7.9979,0,0,0-8-8,24.0262,24.0262,0,0,1-24-24,7.9979,7.9979,0,0,0-8-8H328.0039a8,8,0,0,0,0,16Z" />
+                                <path
+                                    d="M256,284a68,68,0,1,0-68-68A68.0785,68.0785,0,0,0,256,284Zm0-120a52,52,0,1,1-52,52A52.06,52.06,0,0,1,256,164Z" />
+                                <path d="M476,368H36a8,8,0,0,0,0,16H476a8,8,0,0,0,0-16Z" />
+                                <path d="M476,408H36a8,8,0,0,0,0,16H476a8,8,0,0,0,0-16Z" />
+                            </g>
+                        </svg>
+                        <p class=" self-center" >Cash on delivery</p>
+                        <p class=" self-center">BDT 2000</p>
+                    </div>
                 </div>
                 <div>
-                    <p>Delivery Address</p>
-                    <p>mirpur 10</p>
-                </div>
-            </div>
-            <div>
-                <!-- quantity -->
-                <p>1</p>
-                <!-- food name -->
-                <p>Amarican Burger</p>
-                <!-- price -->
-                <p>BDT 200</p>
-            </div>
-            <div>
-                <div>
-                    <p>Subtotal</p>
-                    <p>BDT 200</p>
-                </div>
-                <div>
-                    <p>Delivery fee</p>
-                    <p>BDT 28</p>
-                </div>
-                <div>
-                    <p>Discount</p>
-                    <p> -BDT 20 B</p>
-                </div>
-                <div>
-                    <p>Incl.Tax</p>
-                    <p>BDT 8</p>
-                </div>
-                <div>
-                    <p>Total <span>(Incl.VAT)</span> </p>
-                    <p>BDT 200</p>
-                </div>
-            </div>
-            <div>
-                <p>Paid With</p>
-                <div>
-                    <p>logo</p>
-                    <p>Cash on delivery</p>
-                    <p>BDT 2000</p>
-                </div>
-            </div>
-            <div>
                 
+                </div>
             </div>
         </div>
     </div>
