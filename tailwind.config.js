@@ -11,6 +11,9 @@ module.exports = {
         overlay: "#ffffff6b",
         "overlay-dark": "#00000052",
       },
+      backgroundImage: {
+        'terms': "url('../public/img/terms_bg.gif')",
+      }
     },
   },
   variants: {
