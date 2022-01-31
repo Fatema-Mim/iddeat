@@ -14,7 +14,8 @@ module.exports = {
         "overlay-dark": "#00000052",
       },
       backgroundImage: {
-        'terms': "url('../public/img/terms_bg.gif')",
+        'terms': "url('/public/img/terms_bg.gif')",
+        'footer': "url('/public/img/footer.jpg')",
       }
     },
   },
