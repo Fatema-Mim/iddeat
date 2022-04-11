@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/assets/css/app.css" />
+    <title>Document</title>
+  </head>
+  <body dir="ltr">
+    <div
+      class="container mx-auto lg:grid grid-cols-3 gap-6 px-4 sm:px-10 py-10 bg-gray-50 w-full"
+    >
+      <div class="bg-color1 text-center py-8 px-6 sm:px-8 rounded-sm shadow-xl">
+        <div class="border border-dashed border-color8 py-10 space-y-4">
+          <p class="uppercase text-2xl tracking-widest text-color8">
+            check availability
+          </p>
+          <div class="text-white text-5xl font-bold space-y-2 font-openSans">
+            <p>Opening</p>
+            <p>Hours</p>
+          </div>
+          <div class="text-base text-white">
+            <p class="text-color8">Monday - Friday</p>
+            <p>7AM - 11AM (Breakfast)</p>
+            <p>11AM - 10PM (Lunch/Dinner)</p>
+          </div>
+          <div class="text-base text-white">
+            <p class="text-color8">Saturday - Sunday</p>
+            <p>8AM - 1PM (Brunch)</p>
+            <p>1PM - 9PM (Lunch/Dinner)</p>
+          </div>
+          <p class="text-color8">+15 890 979 25 52</p>
+        </div>
+      </div>
+      <div class="col-span-2 bg-white px-6 sm:px-8 py-8 rounded-sm shadow-2xl">
+        <div
+          class="border border-dashed border-color8 py-10 px-3 sm:px-4 rounded-sm"
+        >
+          <div class="text-center">
+            <p class="uppercase text-xl tracking-wider text-color8">
+              Reservation
+            </p>
+            <p
+              class="text-3xl sm:text-4xl font-semibold capitalize text-color3 sm:px-3 font-openSans"
+            >
+              Book A Table Now and enjoy the tastes
+            </p>
+          </div>
+          <form action="" class="space-y-4 sm:space-y-6 pt-6">
+            <div class="sm:grid grid-cols-3 gap-8 mt-6 space-y-4 sm:space-y-0">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                class="bg-gray-50 p-3 focus:outline-none text-sm placeholder-gray-600 text-gray-600 w-full lg:w-min"
+              />
+              <input
+                type="email"
+                placeholder="Enter Your Email Id"
+                class="bg-gray-50 p-3 focus:outline-none text-sm placeholder-gray-600 text-gray-600 w-full"
+              />
+              <input
+                type="tel"
+                placeholder="Enter Your Phone"
+                class="bg-gray-50 p-3 focus:outline-none text-sm placeholder-gray-600 text-gray-600 w-full"
+              />
+            </div>
+            <div class="sm:grid grid-cols-3 gap-8 space-y-4 sm:space-y-0">
+              <input
+                type="date"
+                class="bg-gray-50 p-3 focus:outline-none text-sm text-gray-600 w-full"
+              />
+              <select
+                id="time"
+                name="time"
+                class="bg-gray-50 px-2 py-3 text-sm text-gray-600 focus:outline-none w-full"
+              >
+                <option value="6.00 AM" selected="">6.00 AM</option>
+                <option value="6.30 AM">6.30 AM</option>
+                <option value="7.00 AM">7.00 AM</option>
+              </select>
+              <select
+                id="person"
+                name="person"
+                class="bg-gray-50 px-2 py-3 text-sm text-gray-600 focus:outline-none w-full"
+              >
+                <option value="1" selected="">1 Person</option>
+                <option value="2">2 Person</option>
+                <option value="3">3 Person</option>
+              </select>
+            </div>
+            <div class="sm:grid grid-cols-2 gap-8 space-y-4 sm:space-y-0">
+              <select
+                id="services"
+                name="services"
+                class="bg-gray-50 px-2 py-3 text-sm text-gray-600 focus:outline-none w-full"
+              >
+                <option value="Conference Meetup" selected="">
+                  Conference Meetup
+                </option>
+                <option value="Private Dinner">Private Dinner</option>
+                <option value="Birthday Party">Birthday Party</option>
+              </select>
+              <div class="flex space-x-1 sm:space-x-3">
+                <div class="px-4 py-3 bg-gray-50">1</div>
+                <div class="px-4 py-3 bg-gray-50">+</div>
+                <div class="px-4 py-3 bg-gray-50">1</div>
+                <div class="px-4 py-3 bg-gray-50">=</div>
+                <input
+                  type="text"
+                  class="bg-gray-50 w-16 focus:outline-none px-2 border focus:border-color1"
+                />
+              </div>
+            </div>
+            <div class="text-center pt-1">
+              <button
+                class="uppercase text-base tracking-wider text-color1 border border-color1 px-4 py-2 hover:bg-color1 hover:text-color8 rounded-sm hover:duration-1000"
+              >
+                Send message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
