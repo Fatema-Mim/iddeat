@@ -56,11 +56,11 @@
             </p>
           </div>
           <form action="" class="space-y-4 sm:space-y-6 pt-6">
-            <div class="sm:grid grid-cols-3 gap-8 mt-6 space-y-4 sm:space-y-0">
+            <div class="sm:grid grid-cols-3 gap-4 mt-6 space-y-4 sm:space-y-0">
               <input
                 type="text"
                 placeholder="Enter Your Name"
-                class="bg-gray-50 p-3 focus:outline-none text-sm placeholder-gray-600 text-gray-600 w-full lg:w-min"
+                class="bg-gray-50 p-3 focus:outline-none text-sm placeholder-gray-600 text-gray-600 w-full"
               />
               <input
                 type="email"
@@ -73,7 +73,7 @@
                 class="bg-gray-50 p-3 focus:outline-none text-sm placeholder-gray-600 text-gray-600 w-full"
               />
             </div>
-            <div class="sm:grid grid-cols-3 gap-8 space-y-4 sm:space-y-0">
+            <div class="sm:grid grid-cols-3 gap-4 space-y-4 sm:space-y-0">
               <input
                 type="date"
                 class="bg-gray-50 p-3 focus:outline-none text-sm text-gray-600 w-full"
@@ -97,7 +97,7 @@
                 <option value="3">3 Person</option>
               </select>
             </div>
-            <div class="sm:grid grid-cols-2 gap-8 space-y-4 sm:space-y-0">
+            <div class="sm:grid grid-cols-3 gap-4 space-y-4 sm:space-y-0">
               <select
                 id="services"
                 name="services"
@@ -109,14 +109,19 @@
                 <option value="Private Dinner">Private Dinner</option>
                 <option value="Birthday Party">Birthday Party</option>
               </select>
-              <div class="flex space-x-1 sm:space-x-3">
-                <div class="px-4 py-3 bg-gray-50">1</div>
-                <div class="px-4 py-3 bg-gray-50">+</div>
-                <div class="px-4 py-3 bg-gray-50">1</div>
+              <textarea
+                rows="1"
+                class="bg-gray-50 px-2 py-3 text-sm text-gray-600 focus:outline-none w-full placeholder-gray-600"
+                placeholder="Any Special Request"
+              ></textarea>
+              <div class="flex space-x-1 md:space-x-1 lg:space-x-2">
+                <div class="px-3 py-3 bg-gray-50">1</div>
+                <div class="px-3 py-3 bg-gray-50">+</div>
+                <div class="px-3 py-3 bg-gray-50">1</div>
                 <div class="px-4 py-3 bg-gray-50">=</div>
                 <input
                   type="text"
-                  class="bg-gray-50 w-16 focus:outline-none px-2 border focus:border-color1"
+                  class="bg-gray-50 w-10 focus:outline-none px-2 border focus:border-color1"
                 />
               </div>
             </div>
