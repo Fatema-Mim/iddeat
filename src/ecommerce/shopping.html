@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../public/assets/css/app.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container mx-auto px-20 py-10">
+      <p class="text-6xl text-center my-12">Shopping Cart</p>
+      <table class="table-auto w-full">
+        <thead class="bg-red-100 shadow-sm shadow-slate-800">
+          <tr>
+            <th class="py-2">Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          <tr
+            class="border-b border-gray-200 hover:shadow-inner cursor-pointer"
+          >
+            <td class="flex my-3">
+              <img
+                src="../../public/img/product/product1.jpg"
+                alt="product"
+                class="h-12 w-12 object-contain"
+              />
+              <a
+                href="#"
+                class="self-center text-blue-700 hover:text-color3 ms-4"
+                >Coca cola
+              </a>
+            </td>
+            <td>$ <span id="mainPice">100</span></td>
+            <td>
+              <button
+                onclick="increaseNumber('textbox' ,'mainPice' ,'totalAmount' )"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 inline-block border border-gray-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
+                </svg>
+              </button>
+              <input
+                type="text"
+                name=""
+                id="textbox"
+                value="0"
+                class="w-5 text-center"
+              />
+              <button
+                onclick="decreaseNumber('textbox' ,'mainPice', 'totalAmount')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 inline-block border border-gray-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </td>
+            <td>$ <span id="totalAmount">0.00</span></td>
+            <td id="remove">X</td>
+          </tr>
+          <tr
+            class="border-b border-gray-200 hover:shadow-inner cursor-pointer"
+          >
+            <td class="flex my-3">
+              <img
+                src="../../public/img/product/product3.jpg"
+                alt="product"
+                class="h-12 w-12 object-contain"
+              />
+              <a
+                href="#"
+                class="self-center text-blue-700 hover:text-color3 ms-4"
+                >Plam
+              </a>
+            </td>
+            <td>$ <span id="mainPice1">50</span></td>
+            <td>
+              <button
+                onclick="increaseNumber('textbox1' ,'mainPice1' ,'totalAmount1' )"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 inline-block border border-gray-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
+                </svg>
+              </button>
+              <input
+                type="text"
+                name=""
+                id="textbox1"
+                value="0"
+                class="w-5 text-center"
+              />
+              <button
+                onclick="decreaseNumber('textbox1' ,'mainPice1', 'totalAmount1')"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 inline-block border border-gray-300"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </td>
+            <td>$ <span id="totalAmount1">0.00</span></td>
+            <td id="remove">X</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="py-8">
+        <a
+          href="#"
+          class="px-3 py-3 bg-color3 hover:bg-color1 border border-color3 hover:border-color1 text-white font-medium capitalize rounded-sm"
+          >Back To Shop</a
+        >
+      </div>
+      <div class="grid grid-cols-3 gap-8">
+        <div>
+          <p class="text-2xl">Coupon Discount</p>
+          <form action="" class="py-5">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="border border-gray-400 p-2 min-w-full text-black focus:border-none mb-3"
+              placeholder="Coupon Code"
+            />
+            <a
+              href="#"
+              class="w-full px-3 py-1 bg-color3 hover:bg-color1 border border-color3 hover:border-color1 text-white font-medium capitalize rounded-sm"
+              >Apply</a
+            >
+          </form>
+        </div>
+        <div>
+          <p class="text-2xl">Shipping Address</p>
+          <form action="" class="py-5">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="border border-gray-400 p-2 min-w-full text-black focus:border-none mb-3"
+              placeholder="Country"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="border border-gray-400 p-2 min-w-full text-black focus:border-none mb-3"
+              placeholder="State"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="border border-gray-400 p-2 min-w-full text-black focus:border-none mb-3"
+              placeholder="Town/City"
+            />
+
+            <input
+              type="text"
+              name=""
+              id=""
+              class="border border-gray-400 p-2 min-w-full text-black focus:border-none mb-3"
+              placeholder="ZIP/Postcode"
+            />
+            <a
+              href="#"
+              class="px-3 py-1 bg-color3 hover:bg-color1 border border-color3 hover:border-color1 text-white font-medium capitalize rounded-sm"
+              >Update</a
+            >
+          </form>
+        </div>
+        <div>
+          <div class="border border-gray-300 p-4 text-slate-500">
+            <div class="flex justify-between py-1">
+              <p>Subtotal</p>
+              <p>$ <span id="productAmount">0.00</span></p>
+            </div>
+            <div class="flex justify-between py-1">
+              <p>Delivery Fee</p>
+              <p>$ <span id="shipping">50</span></p>
+            </div>
+            <div class="flex justify-between border-t border-gray-300 py-1">
+              <p>Total</p>
+              <p class="text-black">
+                $ <span id="totalProductPrice">0.00</span>
+              </p>
+            </div>
+            <p class="text-lg my-6">
+              Shipping To <span class="text-black font-medium">Bangladesh</span>
+            </p>
+          </div>
+          <button
+            class="mt-6 py-2 w-full bg-color3 hover:bg-color1 border border-color3 hover:border-color1 text-white font-medium capitalize rounded-sm"
+          >
+            procced to checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const close = document.querySelectorAll("#remove");
+      for (let i = 0; i < close.length; i++) {
+        close[i].addEventListener("click", () => {
+          close[i].parentElement.style.display = "none";
+        });
+      }
+
+      var productAmount = document.getElementById("productAmount");
+      var shipping = document.getElementById("shipping");
+      var totalProductPrice = document.getElementById("totalProductPrice");
+
+      const increaseNumber = (incdec, mainPice, totalPrice) => {
+        const quantity = document.getElementById(incdec);
+        const mPrice = document.getElementById(mainPice);
+        const price = document.getElementById(totalPrice);
+        console.log(price);
+        quantity.value = parseInt(quantity.value) + 1;
+        price.innerHTML =
+          parseFloat(price.innerHTML) + parseFloat(mPrice.innerHTML);
+        productAmount.innerHTML =
+          parseFloat(productAmount.innerHTML) + parseFloat(mPrice.innerHTML);
+        totalProductPrice.innerHTML =
+          parseFloat(productAmount.innerHTML) + parseFloat(shipping.innerHTML);
+      };
+      const decreaseNumber = (incdec, mainPice, totalPrice) => {
+        const quantity = document.getElementById(incdec);
+        const mPrice = document.getElementById(mainPice);
+        const price = document.getElementById(totalPrice);
+        console.log(price);
+        if (quantity.value <= 0) {
+          quantity.value = 0;
+        } else {
+          quantity.value = parseInt(quantity.value) - 1;
+          price.innerHTML =
+            parseFloat(price.innerHTML) - parseFloat(mPrice.innerHTML);
+          productAmount.innerHTML =
+            parseFloat(productAmount.innerHTML) - parseFloat(mPrice.innerHTML);
+
+          totalProductPrice.innerHTML =
+            parseFloat(totalProductPrice.innerHTML) -
+            parseFloat(mPrice.innerHTML);
+        }
+      };
+    </script>
+  </body>
+</html>
